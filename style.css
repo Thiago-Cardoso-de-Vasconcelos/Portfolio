@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    
+}
+ol, ul {
+    list-style: none;
+}
+:root {
+    --body-bg-color: #22212C;
+    --text-color: #a19bc0;
+    --bg-cards: #302F3D;
+    --bg-techs: #CB92B1;
+    font-size: 62.5%;
+  }
+
+body{
+    background: #22212C;
+    font-size: 1.6rem;
+}
+
+.conteiner-geral{
+    margin: auto;
+    /* border: 1px solid rgb(0, 139, 30); */
+    padding: 10px;
+    width: 100%;
+    max-width: 1200px;
+    min-width: 250px;
+    
+    display: flex;
+    /*  */
+    gap: 10px;
+}
+
+.conteiner-lateral{
+    /* border: 1px solid rgb(23, 198, 221); */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.conteiner-foto-nome{
+    width:100%;
+    max-width:350px;
+    height: 292px;
+}
+
+.conteiner-informacao{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 5px;
+    width:100%;
+    max-width:350px;
+}
+.conteiner-tecnologias{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    gap: 20px;
+    width:100%;
+    max-width:350px;
+
+}
+.conteiner-conteudo{
+    width: 100%;
+    max-width: 800px;
+    /* border: 1px solid rgb(253, 3, 3); */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.my-projects{
+    width: 100%;
+    max-width:770px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.projetos-carregados{
+    width: 100%;
+    max-width:770px;
+    /* border: 1px solid rgb(253, 229, 11); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content:space-between;
+    gap: 10px;
+}
+li{
+    padding: 10px;
+    width: 100%;
+    max-width: 665px;
+    color: var(--text-color);
+    border-radius: 10px;
+    opacity: 0.9;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    gap: 10px;
+    background: var(--bg-cards);
+    box-shadow: 1px 1px 3px #111111;
+}
+
+
+li span {
+    margin: 1px;
+}
+.conteiner-botao{
+    width: 100%;
+    /* background: #00FF00; */
+    display: flex;
+    justify-content: end;
+}
+.botao{
+    background: var(--body-bg-color);
+    padding: 8px;
+    border-radius: 5px;
+    color: var(--text-color);
+    border-style:none;
+}
+.botao:hover{
+opacity: 0.7;
+}
+
+
+
+.conteiner-foto-nome{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+.foto{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    border: 2px solid #00FF00;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+}
+img{
+    margin-left: 8px;
+    margin-top: 17px;
+}
+
+/* -------------------------------------------------------- */
+
+.estilo{
+    color: var(--text-color);
+    border-radius: 10px;
+    opacity: 0.9;
+    display: flex;
+    padding: 15px;
+    gap: 10px;
+    background: var(--bg-cards);
+    box-shadow: 1px 1px 3px #111111;
+    text-align: center;
+}
+p{
+    text-align: start;
+}
+.link {
+    color: #837E9F;
+    display: flex;
+}
+.link:hover{
+    opacity: 0.7;
+}
+  
+.titulo-projeto:before{
+    content:url(./assets/folder.svg);
+    padding-right: 10px;
+    
+}
+
+.localizao::before{
+    content:url(./assets/map-pin.svg);
+    padding-right: 10px;
+    
+}
+.linkedin::before{
+    content:url(./assets/linkedin.svg);
+    padding-right: 10px;
+}
+.github::before{
+    content:url(./assets/github.svg);
+    padding-right: 10px;
+}
+.e-mail::before{
+    content:url(./assets/mail.svg);
+    padding-right: 10px;
+}
+.whatsapp::before{
+    content:url(./assets/whatsapp.svg);
+    padding-right: 10px;
+}
+
+.conteiner-tecnologias>h2{
+    text-align: start;
+    width: 360px;
+}
+.tecnologias {
+    display: flex;
+    height: 24px;
+    padding: 15px;
+    background: var(--bg-techs);
+    color: var(--body-bg-color);
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width:900px){
+    .projetos-carregados {
+        grid-template-columns:1fr;
+    }
+}
+@media (max-width:700px){
+    .conteiner-geral{
+        flex-direction: column;
+    }
+   
+}
